@@ -1,0 +1,8 @@
+.more-details {
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    background-color: rgb(240, 126, 78);
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+}
