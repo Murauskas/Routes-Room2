@@ -1,9 +1,11 @@
 .container {
-    padding-top: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    background-color: #e1eadecf;
+    box-shadow: 1px 5px 6px 1px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
@@ -15,7 +17,7 @@
 .products-link {
     text-decoration: none;
     padding: 0.5rem 1.25rem;
-    background-color: rgb(168, 223, 223);
+    background-color: #b3e5fc;
     border-radius: 20px;
     color: black;
     text-transform: uppercase;
