@@ -1,14 +1,14 @@
 import { useState } from "react";
 
+export const defaultValue = "all"
+
 const Dropdown = (props) => {
-  const [value, setValue] = useState("all");
+  const [value, setValue] = useState({defaultValue});
 
   const onChange = (event) => {
     const value = event.target.value;
-    console.log(`dropdown value ${value}`)
     setValue(value);
     props.onChange(value);
-    return value;
   };
 
   return (
@@ -16,12 +16,12 @@ const Dropdown = (props) => {
       <select
         onChange={onChange}
       >
-        <option value="all" default>
+        <option value={defaultValue} default>
           All
         </option>
-        <option value="skin-protection">Skin protection</option>
-        <option value="skin-care">Skin care</option>
-        <option value="perfumes">Perfumes</option>
+        <option value="Skin protection">Skin protection</option>
+        <option value="Skin care">Skin care</option>
+        <option value="Perfumes">Perfumes</option>
       </select>
     </div>
   );

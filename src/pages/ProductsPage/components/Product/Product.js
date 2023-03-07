@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./Product.css"
 
 const Product = ({ id, label, category}) => {
+  
+
   return (
     <div className="product">
       <h3>{label}</h3>
@@ -15,4 +17,4 @@ const Product = ({ id, label, category}) => {
   );
 };
 
-export default Product
+export default Product;
