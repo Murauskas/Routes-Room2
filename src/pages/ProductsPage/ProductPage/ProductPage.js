@@ -12,8 +12,8 @@ const ProductPage = () => {
       <h3>{product.label}</h3>
       <img src={product.img} alt={product.label}/>
       <p>{product.category}</p>
-      <p>{product.price}</p>
       <p>{product.about}</p>
+      <p>{product.price} eur</p>
     </div>
   );
 };
